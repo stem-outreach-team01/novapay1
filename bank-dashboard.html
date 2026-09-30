@@ -462,7 +462,7 @@
       </div>
 
       <!-- Withdraw button — calls makeWithdrawal when clicked -->
-      <button class="btn" onlick="makeWithdrawal()">Withdraw</button>
+      <button class="btn" onclick="makeWithdrawal()">Withdraw</button>
 
       <div class="alert alert-ok"  id="wd-success"></div>
       <div class="alert alert-err" id="wd-error"></div>
@@ -514,7 +514,7 @@
       const amount = parseFloat(document.getElementById("withdraw-amount").value);
 
       // Deduct the withdrawal from the current balance
-      balance = balance + amount;
+      balance = balance - amount;
 
       // Update the balance shown on the hero card
       document.getElementById("balance-display").textContent =
